@@ -1,6 +1,5 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Echoes of the Self"
-theme = "custom"
 [params]
   author = "Hiten"
