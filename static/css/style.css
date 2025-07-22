@@ -1,11 +1,17 @@
+
 body {
-  font-family: sans-serif;
-  margin: 2rem auto;
-  max-width: 700px;
-  padding: 1rem;
-  background: #f9f9f9;
-  color: #333;
+  background-color: #0b0b0b;
+  color: #d0c6f7;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
 }
-a {
-  color: #007acc;
-}
+a { color: #c6b4f7; text-decoration: none; }
+h1, h2, h3 { color: #d0c6f7; }
+section { padding: 3rem 1rem; max-width: 960px; margin: auto; }
+.hero { text-align: center; padding: 5rem 1rem; }
+.featured, .articles { display: grid; gap: 2rem; }
+.featured { grid-template-columns: 1fr 1fr; align-items: center; }
+.articles { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.footer-quote { font-size: 1.2rem; text-align: center; margin-top: 4rem; color: #cdbefc; }
+img { width: 100%; border-radius: 8px; }

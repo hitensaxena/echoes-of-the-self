@@ -1,0 +1,32 @@
+
+{{ define "main" }}
+<section class="hero">
+  <h1 style="font-size: 3rem; font-weight: bold;">Echoes of the Self</h1>
+  <p>I’m not here to teach. I’m here to remember — and to listen, as the Self speaks in silence.</p>
+  <blockquote style="margin-top:2rem; font-style: italic;">In every label dissolved, reality becomes whole again.<br>— a voice listening inward</blockquote>
+</section>
+
+<img src="/images/cover.png" alt="Mystical Illustration" style="width: 100%; max-width: 1000px; margin: auto; display: block; border-radius: 12px;" />
+
+<section class="featured">
+  <div>
+    <h2>Layers of Maya - A Journey Home</h2>
+    <p>Explore the inner dimensions of consciousness and perception...</p>
+  </div>
+  <img src="/images/layers.jpg" alt="Layers" />
+</section>
+
+<section class="articles">
+  {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
+    <div>
+      <img src="{{ .Params.image }}" alt="{{ .Title }}">
+      <h3>{{ .Title }}</h3>
+      <p style="opacity: 0.7;">{{ .Params.category }} — {{ .Date.Format "January 2, 2006" }}</p>
+    </div>
+  {{ end }}
+</section>
+
+<section class="footer-quote">
+  <p>I write to remember what I’ve always felt beneath thought and time — these are fragments from a journey inward.</p>
+</section>
+{{ end }}

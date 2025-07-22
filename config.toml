@@ -1,5 +1,6 @@
-baseURL = "https://example.com/"
+baseURL = "/"
 languageCode = "en-us"
-title = "Hiten's Blog"
+title = "Echoes of the Self"
+theme = "custom"
 [params]
   author = "Hiten"
